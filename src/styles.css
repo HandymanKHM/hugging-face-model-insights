@@ -1,0 +1,122 @@
+/* styles.css */
+:root {
+    --primary-color: #0078d7;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --input-border-color: #ccc;
+    --feedback-bg-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin-top: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block &#8203;:citation[oaicite:0]{index=0}&#8203;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+#feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--feedback-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
